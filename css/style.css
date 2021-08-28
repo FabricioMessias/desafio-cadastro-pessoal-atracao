@@ -2,68 +2,101 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #fd7e14;
     color: black; 
-    margin: 0;
+    margin: 0 auto;
 }
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100px;
-    margin-top:3%;
+    flex-wrap: wrap;
+    height: 160px;
+    margin-top:4%;
     font-size: 20px;
+    padding: 20px;
     font-weight: bold;
-    background-color: gainsboro;
+    color: white;
+    background-color: #140083;
+}
+.divRodape{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.divRodapeEndereco{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -50px;
 }
 .divCabecalho{
     display: flex;
     justify-content:center;
+    flex-wrap: wrap;
     align-items: center;
     background-color: #fd7e14;
     width: 100%;
-    height: 120px;
+    height: 110px;
+    margin-top: 10px;
+    text-align: center;
 }
 .divLogotipo{
     display: flex;
     justify-content:center;
-    align-items: center;
+    width: 90px;
+    border-radius: 15px;
+    box-shadow: black 2px 2px 3px;
 }
 .logotipo{
-    width: 33%;
-    margin-right: 50%;
+    width: 100%;
+    margin: 0 auto;
 }
 .divTextoCabecalho{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10%;
+    margin-left: 20px;
     font-size: 1.2rem; 
     color: white; 
     text-align: center;
 }
+.divTextoMain{
+    display: flex;
+    color: #222425;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    text-align: center;
+}
 .textoLegend{
-    font-size: 1.5rem; 
+    font-size: 1.4rem; 
     color: black; 
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
 }
 .buttonInput{
     cursor: pointer;
-    display:flex;
-    justify-content: center;
     text-align: center;
     font-size: 1.3rem;
     width: 160px;
-    height: 50px;
-    margin-top: 2%;
+    height: 52px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid lightgray;
+    background-color: #f8f9fa;
+    border: 1px solid gray;
     box-shadow: gray 2px 2px 3px;
-    margin-left: 40%;
+}
+.divButton{
+    display:flex;
+    justify-content: center;
+    margin-top: -20px;
 }
 .buttonInput:hover{
     border: 1px solid lightgray;
+    background-color: lightgray;
     box-shadow: black 3px 3px 3px;
 }
 .divForm{
@@ -71,36 +104,66 @@ footer{
     justify-content: center;
     align-items: center;
 }
+.textoCamposObrigatios{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
 form{
     width: 90%;
     background-color: white;
-    margin-top: 0;
-    padding: 2%;
+    margin: 0 auto;
+    padding: 1.7%;
     border: 1px solid gainsboro;
     border-radius: 14px;
-    box-shadow: lightgray 0px 0px 3px;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
 }
 fieldset{
     border-radius: 14px;
     border: 2px solid gainsboro;
-    padding: 3%;
+    padding: 1.7%;
 }
 label{
     color: black;
-    font-size: 1.2rem;
-    font-weight: 500; 
+    font-size: 1.26rem;
+    font-weight: 600; 
 }
 input{
-    border: 2px solid lightgray;
+    border: 1px solid gray;
     border-radius: 3px;
     height: 30px;
     margin-right: 1%;
+    margin-top: 2%;
+    font-size: 18px;
 }
-input[type="text"]:focus {
-    background: #f8f9fa;
+
+@media (max-width: 600px){
+    input{
+        display: flex;
+        justify-content: center;
+    }
 }
+@media (max-width: 600px){
+    select{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 600px){
+    .divTextoMain{
+        margin-top: 70px;
+        padding: 20px;
+    }
+}
+@media (max-width: 600px){
+    .divTextoCabecalho{
+        margin-left: 0;
+    }
+}
+
 input[type="text"]:hover{
-    border: #fd7e14 2px solid;
+    border:1px solid #fd7e14;
 }
 input[type="text"]:placeholder-shown{
     font-size: 1rem; 
@@ -118,7 +181,7 @@ input[id="rg"]{
     width: 150px;
 }
 input[id="endereco"]{
-    width: 300px;
+    width: 280px;
 }
 input[id="numero"]{
     width: 150px;
@@ -143,16 +206,27 @@ input[id="telefoneFixo"]{
 input[id="telefoneCelular"]{
     width: 270px;
 }
+input[type="text"]:not(:placeholder-shown){
+    border-color: green;
+}
+
+input:required{
+    border-color: #fd7e14;
+}
+
 select{
-    border: 2px solid lightgray;
+    border: 1px solid gray;
     border-radius: 3px;
     height: 30px;
+    margin-right: 1%;
+    font-weight: 600;
 }
+
 select:focus {
     background: #f8f9fa;
 }
 select:hover{
-    border: #fd7e14 2px solid;
+    border: #fd7e14 1px solid;
 }
 select:optional{
     height: 36px;
