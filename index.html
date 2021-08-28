@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo-itau.png" type="image/png" sizes="16x16">
+    <title>Cadastro Pessoal - Atração</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho-->
+    <header>
+        <div class="divCabecalho">
+            <div class="divTextoCabecalho">
+                <h1>Cadastro Pessoal Itaú Unibanco</h1>
+            </div>
+            <div class="divLogotipo">
+                <img class="logotipo" src="/img/logo-itau.png" alt="logotipo">
+            </div>
+        </div>
+    </header>
+
+    <!--Conteúdo Principal-->
+    <main>
+    <!--Formulário de Cadastro Pessoal-->
+    <div class="divForm">
+    <form method="POST">
+        <!--Dados Pessoais-->
+        <fieldset>
+            <legend class="textoLegend">Preencha os campos abaixo com seus dados pessoais</legend>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required="required">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" required="required">
+            <label for="rg">RG:</label>
+            <input type="text" name="rg" id="rg" placeholder="Digite seu RG">
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" id="sexo">
+                <option value="01">Feminino</option>
+                <option value="02">Masculino</option>
+            </select>
+        </fieldset>
+        <!--Dados de endereço-->
+        <fieldset>
+            <legend class="textoLegend">Preencha os campos abaixo com seu endereço</legend>
+            <label for="endereco">Endereço: </label>
+            <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço" required="required">
+            <label for="numero">Número: </label>
+            <input type="text" name="numero" id="numero" placeholder="Digite seu numero" required="required">
+            <label for="bairro">Bairro: </label>
+            <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro">
+            <label for="cidade">Cidade: </label>
+            <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade">
+            <label for="estado">Estado: </label>
+            <input type="text" name="estado" id="estado" placeholder="Digite seu estado">
+            <label for="cep">CEP: </label>
+            <input type="text" name="cep" id="cep" placeholder="Digite seu CEP">
+        </fieldset>
+        <!--Dados de telefones-->
+        <fieldset>
+            <legend class="textoLegend">Preencha os campos abaixo com seus telefones</legend>
+            <label for="telefoneFixo">Telefone Fixo: </label>
+            <input type="text" name="telefoneFixo" id="telefoneFixo" placeholder="Digite seu número de telefone fixo">
+            <label for="telefoneCelular">Telefone Celular: </label>
+            <input type="text" name="telefoneCelular" id="telefoneCelular" placeholder="Digite seu numero de telefone celular" required="required">
+        </fieldset>
+
+        <input class="buttonInput" type="submit" name="enviar" onclick="" value="Cadastrar">
+    </form>
+    </div>
+    </main>
+
+    <!--Rodapé-->
+    <footer>
+        <p>2021 Todos os direitos reservados</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

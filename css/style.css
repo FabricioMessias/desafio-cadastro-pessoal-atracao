@@ -1,0 +1,160 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fd7e14;
+    color: black; 
+    margin: 0;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-top:3%;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: gainsboro;
+}
+.divCabecalho{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #fd7e14;
+    width: 100%;
+    height: 120px;
+}
+.divLogotipo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.logotipo{
+    width: 33%;
+    margin-right: 50%;
+}
+.divTextoCabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    font-size: 1.2rem; 
+    color: white; 
+    text-align: center;
+}
+.textoLegend{
+    font-size: 1.5rem; 
+    color: black; 
+    text-align: center;
+    font-weight: 600;
+}
+.buttonInput{
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+    width: 160px;
+    height: 50px;
+    margin-top: 2%;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid lightgray;
+    box-shadow: gray 2px 2px 3px;
+    margin-left: 40%;
+}
+.buttonInput:hover{
+    border: 1px solid lightgray;
+    box-shadow: black 3px 3px 3px;
+}
+.divForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 90%;
+    background-color: white;
+    margin-top: 0;
+    padding: 2%;
+    border: 1px solid gainsboro;
+    border-radius: 14px;
+    box-shadow: lightgray 0px 0px 3px;
+}
+fieldset{
+    border-radius: 14px;
+    border: 2px solid gainsboro;
+    padding: 3%;
+}
+label{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500; 
+}
+input{
+    border: 2px solid lightgray;
+    border-radius: 3px;
+    height: 30px;
+    margin-right: 1%;
+}
+input[type="text"]:focus {
+    background: #f8f9fa;
+}
+input[type="text"]:hover{
+    border: #fd7e14 2px solid;
+}
+input[type="text"]:placeholder-shown{
+    font-size: 1rem; 
+}
+input[id="nome"]{
+    width: 160px;
+}
+input[id="sobrenome"]{
+    width: 160px;
+}
+input[id="cpf"]{
+    width: 150px;
+}
+input[id="rg"]{
+    width: 150px;
+}
+input[id="endereco"]{
+    width: 300px;
+}
+input[id="numero"]{
+    width: 150px;
+}
+input[id="bairro"]{
+    width: 150px;
+}
+input[id="cidade"]{
+    width: 150px;
+}
+input[id="estado"]{
+    width: 150px;
+    margin-top: 2%;
+}
+input[id="cep"]{
+    width: 160px;
+    margin-top: 2%;
+}
+input[id="telefoneFixo"]{
+    width: 270px;
+}
+input[id="telefoneCelular"]{
+    width: 270px;
+}
+select{
+    border: 2px solid lightgray;
+    border-radius: 3px;
+    height: 30px;
+}
+select:focus {
+    background: #f8f9fa;
+}
+select:hover{
+    border: #fd7e14 2px solid;
+}
+select:optional{
+    height: 36px;
+    font-size: 1rem; 
+}
