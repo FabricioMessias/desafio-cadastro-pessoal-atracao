@@ -27,42 +27,42 @@
         <div class="divTextoMain"><h3>Temos a conta certa para o seu momento de vida, crie sua conta e seja cliente Itaú.</h3></div>
     <!--Formulário de Cadastro Pessoal-->
         <div class="divForm">
-        <form name="formularioCadastro" onsubmit="return validacao()" action="/index.html" method="POST" netlify>
+        <form name="formularioCadastro" onsubmit="return validacao()" action="/index.html" method="POST" data-netlify="true">
             <!--Dados Pessoais-->
             <fieldset>
                 <legend class="textoLegend">Preencha os campos abaixo com seus dados pessoais</legend>
-                <label for="nome">Nome: <sup>*</sup></label>
+                <label>Nome: <sup>*</sup></label>
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required="required">
-                <label for="sobrenome">Sobrenome:</label>
+                <label>Sobrenome:</label>
                 <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
-                <label for="cpf">CPF: <sup>*</sup></label>
+                <label>CPF: <sup>*</sup></label>
                 <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" required="required">
                 <div id="erro">
                     <strong>O CPF digitado não é válido</strong>
                 </div>
-                <label for="rg">RG:</label>
+                <label>RG:</label>
                 <input type="text" name="rg" id="rg" placeholder="Digite seu RG">
-                <label for="sexo">Sexo:</label>
+                <label>Sexo:</label>
                 <select name="sexo" id="sexo">
                     <option value="Feminino">Feminino</option>
                     <option value="Masculino">Masculino</option>
                 </select>
-                <label for="dataNascimento">Data de nascimento:</label>
+                <label>Data de nascimento:</label>
                 <input type="date" name="dataNascimento" id="dataNascimento">
             </fieldset>
             <!--Dados de endereço-->
             <fieldset>
                 <legend class="textoLegend">Preencha os campos abaixo com seu endereço</legend>
-                <label for="endereco">Endereço: <sup>*</sup></label>
+                <label>Endereço: <sup>*</sup></label>
                 <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço" required="required">
-                <label for="numero">Número: <sup>*</sup></label>
+                <label>Número: <sup>*</sup></label>
                 <input type="text" name="numero" id="numero" placeholder="Digite seu numero" required="required">
-                <label for="bairro">Bairro: </label>
+                <label>Bairro: </label>
                 <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro">
-                <label for="cidade">Cidade: </label>
+                <label>Cidade: </label>
                 <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade">
                 <!-- <input type="text" name="estado" id="estado" placeholder="Digite seu estado"> -->
-                <label for="estado">Estado: </label>
+                <label>Estado: </label>
                 <!--Select dos Estados-->
                 <select name="estado" id="estado">
                     <option selected disabled value="">Selecione seu Estado (UF):</option>
@@ -95,17 +95,17 @@
                     <option value="Tocantins">Tocantins</option>
                 </select>
 
-                <label for="cep">CEP: </label>
+                <label>CEP: </label>
                 <input type="text" name="cep" id="cep" placeholder="Digite seu CEP">
             </fieldset>
             <!--Dados de telefones-->
             <fieldset>
                 <legend class="textoLegend">Preencha os campos abaixo com seus contatos</legend>
-                <label for="telefoneFixo">Telefone Fixo: </label>
+                <label>Telefone Fixo: </label>
                 <input type="tel" name="telefoneFixo" id="telefoneFixo" placeholder="Digite seu telefone fixo" maxlength="20">
-                <label for="telefoneCelular">Telefone Celular: <sup>*</sup></label>
+                <label>Telefone Celular: <sup>*</sup></label>
                 <input type="tel" name="telefoneCelular" id="telefoneCelular" placeholder="Digite seu telefone celular" maxlength="20" required="required">
-                <label for="cidade">E-mail: </label>
+                <label>E-mail: </label>
                 <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
             </fieldset>
 

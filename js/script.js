@@ -48,7 +48,7 @@ function validacao() {
      } else {
         if(confirm("Ao se cadastrar você concorda em compartilhar seus dados, clique em OK para confirmar ou em Cancelar.")){   
         alert("Cadastro realizado com sucesso!");
-        limparCampos();
+        //limparCampos();
         return true;
         } else {
             return false;
