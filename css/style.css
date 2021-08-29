@@ -179,10 +179,10 @@ input[id="rg"]{
     width: 150px;
 }
 input[id="endereco"]{
-    width: 260px;
+    width: 250px;
 }
 input[id="numero"]{
-    width: 150px;
+    width: 170px;
 }
 input[id="bairro"]{
     width: 150px;
@@ -199,10 +199,10 @@ input[id="cep"]{
     margin-top: 2%;
 }
 input[id="telefoneFixo"]{
-    width: 210px;
+    width: 200px;
 }
 input[id="telefoneCelular"]{
-    width: 210px;
+    width: 220px;
 }
 input[id="email"]{
     width: 220px;
