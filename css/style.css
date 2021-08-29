@@ -9,9 +9,9 @@ footer{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 160px;
+    height: 170px;
     margin-top:5%;
-    font-size: 20px;
+    font-size: 1.2rem;
     padding: 10px;
     font-weight: bold;
     color: white;
@@ -22,14 +22,14 @@ footer{
     justify-content: center;
     width: 100%;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 .divRodapeLink{
     display: flex;
     justify-content: center;
     width: 100%;
     text-align: center;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     margin-top: -50px;
 }
 .divRodapeLink a{
