@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo-itau.png" type="image/png" sizes="16x16">
-    <title>Cadastro Pessoal - Atração</title>
+    <title>Cadastro Pessoal Itaú Unibanco</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,7 +14,7 @@
     <header>
         <div class="divCabecalho">
             <div class="divLogotipo">
-                <img class="logotipo" src="/img/logo-itau.png" alt="logotipo">
+                <img class="logotipo" src="/img/logo-itau.png" alt="logotipo do Itaú">
             </div>
             <div class="divTextoCabecalho">
                 <h1>Cadastro Pessoal Itaú Unibanco</h1>
@@ -36,7 +36,7 @@
                 <label>Sobrenome:</label>
                 <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
                 <label>CPF: <sup>*</sup></label>
-                <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" required="required">
+                <input type="number" name="cpf" id="cpf" placeholder="Digite somente os números" required="required">
                 <div id="erro">
                     <strong>O CPF digitado não é válido</strong>
                 </div>
@@ -56,7 +56,7 @@
                 <label>Endereço: <sup>*</sup></label>
                 <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço" required="required">
                 <label>Número: <sup>*</sup></label>
-                <input type="text" name="numero" id="numero" placeholder="Digite seu numero" required="required">
+                <input type="number" name="numero" id="numero" placeholder="Digite seu numero" required="required">
                 <label>Bairro: </label>
                 <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro">
                 <label>Cidade: </label>
@@ -96,7 +96,7 @@
                 </select>
 
                 <label>CEP: </label>
-                <input type="text" name="cep" id="cep" placeholder="Digite seu CEP">
+                <input type="number" name="cep" id="cep" placeholder="Digite seu CEP">
             </fieldset>
             <!--Dados de Contato-->
             <fieldset>
@@ -123,7 +123,8 @@
     <!--Rodapé-->
     <footer>
         <div class="divRodape"><p>© 2021 Itaú Unibanco Holding S.A. CNPJ: 00.000.000/0000-00</p></div>
-        <div class="divRodapeEndereco"><p>Rua Principal, 01, Centro, CEP 00000-000</p></div>
+        <div class="divRodapeLink"><a href="https://itautech.gama.academy/">Gama Academy - Programa de Formação Tech Itaú</a></div>
+        <div class="divRodapeLink"><a href="https://www.linkedin.com/in/fabricio-messias/" alt="LinkedIn">Projeto desenvolvido por Fabricio Messias</a></div>
     </footer>
 </body>
 

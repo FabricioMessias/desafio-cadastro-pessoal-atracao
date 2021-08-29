@@ -9,7 +9,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 120px;
+    height: 160px;
     margin-top:5%;
     font-size: 20px;
     padding: 10px;
@@ -24,13 +24,18 @@ footer{
     text-align: center;
     font-size: 1.2rem;
 }
-.divRodapeEndereco{
+.divRodapeLink{
     display: flex;
     justify-content: center;
     width: 100%;
     text-align: center;
-    font-size: 1rem;
-    margin-top: -40px;
+    font-size: 1.15rem;
+    margin-top: -50px;
+}
+.divRodapeLink a{
+    margin-top: 10px;
+    padding: 20px;
+    color: #fd7e14;
 }
 .divCabecalho{
     display: flex;
@@ -167,12 +172,13 @@ input{
     .divTextoMain{
         margin-top: 80px;
         padding: 20px;
-        margin-bottom: -30px;
+        margin-bottom: -20px;
     }
 }
 @media (max-width: 600px){
     .divTextoCabecalho{
         margin-left: 0;
+        font-size: 1.13rem; 
     }
 }
 @media (max-width: 600px){
@@ -198,13 +204,13 @@ input[type="text"]:placeholder-shown{
     font-size: 1rem; 
 }
 input[id="nome"]{
-    width: 160px;
+    width: 200px;
 }
 input[id="sobrenome"]{
-    width: 160px;
+    width: 200px;
 }
 input[id="cpf"]{
-    width: 150px;
+    width: 240px;
 }
 input[id="rg"]{
     width: 150px;
@@ -236,7 +242,7 @@ input[id="telefoneCelular"]{
     width: 210px;
 }
 input[id="email"]{
-    width: 260px;
+    width: 220px;
 }
 input[type="text"]:not(:placeholder-shown){
     border-color: green;
