@@ -76,14 +76,6 @@ footer{
     font-size: 1.4rem;
     text-align: center;
 }
-#erro{
-    display: none;
-    justify-content: center;
-    margin-left: 38%;
-    margin-top: 10px;
-    font-size: 1.1rem;
-    color: red;
-}
 .textoLegend{
     font-size: 1.4rem; 
     color: black; 
@@ -156,39 +148,6 @@ input{
     margin-top: 2%;
     font-size: 18px;
 }
-
-@media (max-width: 600px){
-    input{
-        display: flex;
-        justify-content: center;
-    }
-}
-@media (max-width: 600px){
-    select{
-        display: flex;
-        justify-content: center;
-    }
-}
-@media (max-width: 600px){
-    .divTextoMain{
-        margin-top: 80px;
-        padding: 20px;
-        margin-bottom: -20px;
-    }
-}
-@media (max-width: 600px){
-    .divTextoCabecalho{
-        margin-left: 0;
-        font-size: 1.13rem; 
-    }
-}
-@media (max-width: 600px){
-    .btn{
-        margin: 5px;
-        font-size: 1.1rem;
-    }
-}
-
 input[type="text"]:hover{
     border:1px solid #fd7e14;
 }
@@ -199,6 +158,9 @@ input[type="email"]:hover{
     border:1px solid #fd7e14;
 }
 input[type="date"]:hover{
+    border:1px solid #fd7e14;
+}
+input[type="number"]:hover{
     border:1px solid #fd7e14;
 }
 input[type="text"]:placeholder-shown{
@@ -254,6 +216,9 @@ input[type="tel"]:not(:placeholder-shown){
 input[type="email"]:not(:placeholder-shown){
     border-color: green;
 }
+input[type="number"]:not(:placeholder-shown){
+    border-color: green;
+}
 input:required{
     border-color: #fd7e14;
 }
@@ -265,7 +230,6 @@ select{
     margin-right: 1%;
     font-weight: 600;
 }
-
 select:focus {
     background: #f8f9fa;
 }
@@ -275,4 +239,45 @@ select:hover{
 select:optional{
     height: 36px;
     font-size: 1rem; 
+}
+
+#erro{
+    display: none;
+    justify-content: center;
+    margin-left: 38%;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: red;
+}
+
+@media (max-width: 600px){
+    input{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 600px){
+    select{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 600px){
+    .divTextoMain{
+        margin-top: 80px;
+        padding: 20px;
+        margin-bottom: -20px;
+    }
+}
+@media (max-width: 600px){
+    .divTextoCabecalho{
+        margin-left: 0;
+        font-size: 1.13rem; 
+    }
+}
+@media (max-width: 600px){
+    .btn{
+        margin: 5px;
+        font-size: 1.1rem;
+    }
 }
