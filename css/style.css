@@ -79,8 +79,9 @@ footer{
 #erro{
     display: none;
     justify-content: center;
-    margin-left: 13%;
+    margin-left: 38%;
     margin-top: 10px;
+    font-size: 1.1rem;
     color: red;
 }
 .textoLegend{
