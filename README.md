@@ -50,7 +50,7 @@ Funcionalidades que o sistema oferece:
 ####### Cadastrar
 ####### - Ao clicar em Cadastrar é realizado as validações e após caso esteja certo o cadastro é realizado.
 
-<br>
+<br />
 ## 🖥️🖱️ Telas 
 
 Nesta seção será exibido as telas do sistema.
@@ -61,28 +61,28 @@ Nesta seção será exibido as telas do sistema.
 </p>
 Nesta tela inicial é exibido o formulário de cadastro.
 
-<br>
+<br />
 ### Index - Mensagem de erro "Preencha este campo" (campo obrigatório)
 <p align="center">
 <img src="https://cadastro-pessoal-formulario.netlify.app/img/imageREADME/telaMensagemErro.png" title="tela ndex  Mensagem de erro Preencha este campo (campo obrigatório)" />
 </p>
 Nesta tela é exibido a mensagem de erro caso não seja preenchido um campo obrigatório.
 
-<br>
+<br />
 ### Index - Mensagem de erro CPF inválido
 <p align="center">
 <img src="https://cadastro-pessoal-formulario.netlify.app/img/imageREADME/telaMensagemCpfInvalido.png" title="tela Index Mensagem de erro CPF inválido"/>
 </p>
 Nesta tela inicial é exibido a mensagem de erro se o CPF digitado não for válido.
 
-<br>
+<br />
 ### Index - Alerta sobre o compartilhamento dos dados ao realizar o cadastro
 <p align="center">
 <img src="https://cadastro-pessoal-formulario.netlify.app/img/imageREADME/telaAlertaPrivacidade.png" title="tela Index Alerta sobre o compartilhamento dos dados ao realizar o cadastro"/>
 </p>
 Nesta tela inicial é exibido um alerta com a mensagem "Ao se cadastrar você concorda em compartilhar seus dados, clique em OK para confirmar ou clique em Cancelar."
 
-<br>
+<br />
 ### Index - Alerta informando que o cadastro foi realizado com sucesso
 <p align="center">
 <img src="https://cadastro-pessoal-formulario.netlify.app/img/imageREADME/telaAlertaCadastroSucesso.png" title="tela Index Alerta informando que o cadastro foi realizado com sucesso"/>
