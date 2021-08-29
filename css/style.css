@@ -9,10 +9,10 @@ footer{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 160px;
-    margin-top:4%;
+    height: 120px;
+    margin-top:5%;
     font-size: 20px;
-    padding: 20px;
+    padding: 10px;
     font-weight: bold;
     color: white;
     background-color: #140083;
@@ -30,7 +30,7 @@ footer{
     width: 100%;
     text-align: center;
     font-size: 1rem;
-    margin-top: -50px;
+    margin-top: -40px;
 }
 .divCabecalho{
     display: flex;
@@ -39,8 +39,8 @@ footer{
     align-items: center;
     background-color: #fd7e14;
     width: 100%;
-    height: 110px;
-    margin-top: 10px;
+    height: 100px;
+    margin-top: 20px;
     text-align: center;
 }
 .divLogotipo{
@@ -71,34 +71,45 @@ footer{
     font-size: 1.4rem;
     text-align: center;
 }
+#erro{
+    display: none;
+    justify-content: center;
+    margin-left: 13%;
+    margin-top: 10px;
+    color: red;
+}
 .textoLegend{
     font-size: 1.4rem; 
     color: black; 
     text-align: center;
     font-weight: 400;
 }
-.buttonInput{
+.btn{   
+    align-items: center;
     cursor: pointer;
     text-align: center;
-    font-size: 1.3rem;
-    width: 160px;
+    font-size: 1.2rem;
+    width: 180px;
     height: 52px;
     border-radius: 25px;
-    font-weight: bold;
+    font-weight: 600;
     background-color: #f8f9fa;
     border: 1px solid gray;
-    box-shadow: gray 2px 2px 3px;
+    box-shadow: gray 2px 2px 2px;
+    margin: 20px;
+    margin-top: 0;
 }
-.divButton{
-    display:flex;
-    justify-content: center;
-    margin-top: -20px;
-}
-.buttonInput:hover{
+.btn:hover{
     border: 1px solid lightgray;
     background-color: lightgray;
     box-shadow: black 3px 3px 3px;
 }
+.divButton{
+    display:flex;
+    justify-content:center;
+    margin-top:0 auto;
+}
+
 .divForm{
     display: flex;
     justify-content: center;
@@ -108,6 +119,7 @@ footer{
     text-align: center;
     font-size: 20px;
     font-weight: 600;
+    color: #fd7e14;
 }
 form{
     width: 90%;
@@ -118,6 +130,7 @@ form{
     border-radius: 14px;
     box-sizing: border-box;
     border: 1px solid lightgray;
+    box-shadow: lightgray 1px 1px 1px;
 }
 fieldset{
     border-radius: 14px;
@@ -152,8 +165,9 @@ input{
 }
 @media (max-width: 600px){
     .divTextoMain{
-        margin-top: 70px;
+        margin-top: 80px;
         padding: 20px;
+        margin-bottom: -30px;
     }
 }
 @media (max-width: 600px){
@@ -161,8 +175,23 @@ input{
         margin-left: 0;
     }
 }
+@media (max-width: 600px){
+    .btn{
+        margin: 5px;
+        font-size: 1.1rem;
+    }
+}
 
 input[type="text"]:hover{
+    border:1px solid #fd7e14;
+}
+input[type="tel"]:hover{
+    border:1px solid #fd7e14;
+}
+input[type="email"]:hover{
+    border:1px solid #fd7e14;
+}
+input[type="date"]:hover{
     border:1px solid #fd7e14;
 }
 input[type="text"]:placeholder-shown{
@@ -181,7 +210,7 @@ input[id="rg"]{
     width: 150px;
 }
 input[id="endereco"]{
-    width: 280px;
+    width: 260px;
 }
 input[id="numero"]{
     width: 150px;
@@ -201,15 +230,23 @@ input[id="cep"]{
     margin-top: 2%;
 }
 input[id="telefoneFixo"]{
-    width: 270px;
+    width: 210px;
 }
 input[id="telefoneCelular"]{
-    width: 270px;
+    width: 210px;
+}
+input[id="email"]{
+    width: 260px;
 }
 input[type="text"]:not(:placeholder-shown){
     border-color: green;
 }
-
+input[type="tel"]:not(:placeholder-shown){
+    border-color: green;
+}
+input[type="email"]:not(:placeholder-shown){
+    border-color: green;
+}
 input:required{
     border-color: #fd7e14;
 }

@@ -27,7 +27,7 @@
         <div class="divTextoMain"><h3>Temos a conta certa para o seu momento de vida, crie sua conta e seja cliente Itaú.</h3></div>
     <!--Formulário de Cadastro Pessoal-->
         <div class="divForm">
-        <form method="POST">
+        <form name="formularioCadastro" onsubmit="return validacao()" action="index.html" method="POST" data-netlify="true">
             <!--Dados Pessoais-->
             <fieldset>
                 <legend class="textoLegend">Preencha os campos abaixo com seus dados pessoais</legend>
@@ -37,6 +37,9 @@
                 <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
                 <label for="cpf">CPF: <sup>*</sup></label>
                 <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" required="required">
+                <div id="erro">
+                    <strong>O CPF digitado não é válido</strong>
+                </div>
                 <label for="rg">RG:</label>
                 <input type="text" name="rg" id="rg" placeholder="Digite seu RG">
                 <label for="sexo">Sexo:</label>
@@ -44,6 +47,8 @@
                     <option value="Feminino">Feminino</option>
                     <option value="Masculino">Masculino</option>
                 </select>
+                <label for="dataNascimento">Data de nascimento:</label>
+                <input type="date" name="dataNascimento" id="dataNascimento">
             </fieldset>
             <!--Dados de endereço-->
             <fieldset>
@@ -56,11 +61,11 @@
                 <input type="text" name="bairro" id="bairro" placeholder="Digite seu bairro">
                 <label for="cidade">Cidade: </label>
                 <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade">
-                <label for="estado">Estado: </label>
                 <!-- <input type="text" name="estado" id="estado" placeholder="Digite seu estado"> -->
+                <label for="estado">Estado: </label>
                 <!--Select dos Estados-->
-                <select name="estado">
-                    <option selected="" value="">Selecione seu Estado (UF):</option>
+                <select name="estado" id="estado">
+                    <option selected disabled value="">Selecione seu Estado (UF):</option>
                     <option value="Acre">Acre</option>
                     <option value="Alagoas">Alagoas</option>
                     <option value="Amapa">Amapá</option>
@@ -95,19 +100,23 @@
             </fieldset>
             <!--Dados de telefones-->
             <fieldset>
-                <legend class="textoLegend">Preencha os campos abaixo com seus telefones</legend>
+                <legend class="textoLegend">Preencha os campos abaixo com seus contatos</legend>
                 <label for="telefoneFixo">Telefone Fixo: </label>
-                <input type="text" name="telefoneFixo" id="telefoneFixo" placeholder="Digite seu número de telefone fixo">
+                <input type="tel" name="telefoneFixo" id="telefoneFixo" placeholder="Digite seu telefone fixo" maxlength="20">
                 <label for="telefoneCelular">Telefone Celular: <sup>*</sup></label>
-                <input type="text" name="telefoneCelular" id="telefoneCelular" placeholder="Digite seu numero de telefone celular" required="required">
+                <input type="tel" name="telefoneCelular" id="telefoneCelular" placeholder="Digite seu telefone celular" maxlength="20" required="required">
+                <label for="cidade">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
             </fieldset>
 
             <div class="textoCamposObrigatios">
-            <p>Os campos com asterisco (*) são obrigatórios para fazer o cadastro.</p>
+            <p>Os campos com asterisco (*) são obrigatórios para realizar o cadastro.</p>
             </div>
             <div class="divButton">
-                <input class="buttonInput" type="submit" name="enviar" onclick="" value="Cadastrar">
-                </div>
+                <button type="button" class="btn" name="limpar" value="limpar" onclick="limparCampos()">Limpar campos</button>    
+                <!--<button type="button" class="btn" name="cadastrar" value="cadastrar" onclick="validacao()">Cadastrar</button>-->
+                <button type="submit" class="btn" name="cadastrar" value="cadastrar">Cadastrar</button>       
+            </div>
         </form>
         </div>
     </main>
@@ -116,6 +125,8 @@
         <div class="divRodape"><p>© 2021 Itaú Unibanco Holding S.A. CNPJ: 00.000.000/0000-00</p></div>
         <div class="divRodapeEndereco"><p>Rua Principal, 01, Centro, CEP 00000-000</p></div>
     </footer>
-    <script src="js/script.js"></script>
 </body>
+
+    <script src="js/script.js"></script>
+
 </html>
