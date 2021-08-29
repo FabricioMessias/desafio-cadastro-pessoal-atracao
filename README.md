@@ -38,16 +38,16 @@ Funcionalidades que o sistema oferece:
 ##### - Tela Index que apresenta o formulário com os campos para ser realizado o cadastro.
 
 ##### Campos do formulário:
-###### Nome, Cpf, Rg, Sexo, Endereco, Numero, Bairro, Cidade, Estado, Cep, Telefone Fixo, Telefone Celular.
+###### Nome, Sobrenome, Cpf, Rg, Sexo, dataNascimento, Endereco, Numero, Bairro, Cidade, Estado, Cep, Telefone Fixo, Telefone Celular e E-mail.
 
 ##### Campos Obrigatórios para realizar o cadastro:
 ###### Nome, Cpf, Endereco, Numero, Telefone Celular
 
 ##### Botões:
-###### Limpar dados
+###### Limpar Campos
 ###### - Ao clicar em Limpar campos todos os dados dos campos do formulário são limpos.
 ###### Cadastrar
-###### - Ao clicar em Cadastrar é realizado as validações e após caso esteja certo o cadastro é realizado.
+###### - Ao clicar em Cadastrar é realizado as validações e caso esteja tudo certo o cadastro é realizado.
 
 ## 🖥️🖱️ Telas 
 
@@ -70,16 +70,16 @@ Nesta tela é exibido a mensagem de erro caso não seja preenchido um campo obri
 <p align="center">
 <img src="https://cadastro-pessoal-formulario.netlify.app/img/imageREADME/telaMensagemCpfInvalido.png" title="tela Index Mensagem de erro CPF inválido"/>
 </p>
-Nesta tela inicial é exibido a mensagem de erro se o CPF digitado não for válido.
+Nesta tela é exibido a mensagem de erro se o CPF digitado não for válido.
 
 ### Index - Alerta sobre o compartilhamento dos dados ao realizar o cadastro
 <p align="center">
 <img src="https://cadastro-pessoal-formulario.netlify.app/img/imageREADME/telaAlertaPrivacidade.png" title="tela Index Alerta sobre o compartilhamento dos dados ao realizar o cadastro"/>
 </p>
-Nesta tela inicial é exibido um alerta com a mensagem "Ao se cadastrar você concorda em compartilhar seus dados, clique em OK para confirmar ou clique em Cancelar."
+Nesta tela é exibido um alerta com a mensagem "Ao se cadastrar você concorda em compartilhar seus dados, clique em OK para confirmar ou clique em Cancelar."
 
 ### Index - Alerta informando que o cadastro foi realizado com sucesso
 <p align="center">
 <img src="https://cadastro-pessoal-formulario.netlify.app/img/imageREADME/telaAlertaCadastroSucesso.png" title="tela Index Alerta informando que o cadastro foi realizado com sucesso"/>
 </p>
-Nesta tela inicial é exibido um alerta com a mensagem "Seu cadastro foi realizado com sucesso!."
+Nesta tela é exibido um alerta com a mensagem "Seu cadastro foi realizado com sucesso!."
