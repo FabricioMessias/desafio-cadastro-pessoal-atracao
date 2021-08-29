@@ -16,7 +16,7 @@
 
 - <p style="color: orange;">O Desafio Cadastro Pessoal - Atração é um projeto individual que foi desenvolvido durante o Programa de Formação Tech do Itaú </p>
 
-Para ver o **Cadastro Pessoal**, clique aqui: [Cadastro Pessoal Itaú Unibanco](https://cadastro-pessoal-formulario.netlify.app/) 
+Para ver o projeto **Desafio Cadastro Pessoal - Atração**, clique aqui: [Cadastro Pessoal Itaú Unibanco](https://cadastro-pessoal-formulario.netlify.app/) 
 
 ### 💻 Desenvolvedor
 
